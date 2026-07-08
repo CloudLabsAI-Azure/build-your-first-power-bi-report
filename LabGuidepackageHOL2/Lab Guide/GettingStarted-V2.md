@@ -4,7 +4,7 @@
 
 ## 📘 Overview
 
-In this hands-on lab, you will take a pre-built Power BI report — the **Item Sales Report**, provided for you in the lab environment — on its next journey — from a local `.pbix` file on your desktop to a fully published, shareable, and visually polished business asset in the Power BI Service.
+In this hands-on lab, you will take a pre-built Power BI report — the **Store Performance Report**, provided for you in the lab environment — on its next journey — from a local `.pbix` file on your desktop to a fully published, shareable, and visually polished business asset in the Power BI Service.
 
 You will begin by publishing the report and its semantic model to the Power BI Service, pinning its key visuals into an **Executive Dashboard**, exploring the three primary sharing methods (workspace roles, direct sharing, and apps), and configuring **scheduled refresh** so the data stays current without manual effort. You will then return to the report itself and apply professional design polish — layout grids, themes, conditional formatting, branded design elements, custom AppSource visuals, interactive tooltips, bookmarks, buttons, and finally an AI-generated narrative summary using **Copilot in Power BI**.
 
@@ -21,7 +21,7 @@ This lab is designed to equip participants with hands-on experience in publishin
 
 Participants should have the following prerequisites before starting this lab:
 
-- **Item Sales Report (`.pbix`)**: A pre-built starter report is provided for you at **C:\LabFiles** on the lab virtual machine — no prior lab or setup is required.
+- **Store Performance Report (`.pbix`)**: A pre-built starter report is provided for you at **C:\LabFiles** on the lab virtual machine — no prior lab or setup is required.
 - **Basic familiarity with Power BI Desktop**: Understanding of report pages, visuals, and the Visualizations pane.
 - **Basic understanding of the Power BI Service**: Awareness of workspaces, reports, dashboards, and semantic models (datasets).
 
@@ -86,7 +86,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
 
-![slider](./Images/gs-06.png)
+![slider](./Images/images/gs-06.png)
 
 ## 🔑 Let's Get Started with the Power BI Service
 
@@ -112,22 +112,21 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
    ![](./Images/gs-10.png)
 
-   > **Note**: If you receive a welcome tour pop-up, click **Cancel** or **Skip** to continue.
+   > **Note**:If you recieve a pop up saying that microsoft fabric trail is autmatically assigned for the user and click on **OK**.
+   >
+   >![slider](./Images/images/note.png) 
 
-1. From the Power BI home page, select **Account Manager (1)** from the top-right corner and click **Start trial (2)** to activate the Microsoft Fabric trial.
+
+1. From the Power BI home page, select **Account Manager (1)** from the top-right corner and click **Trail_Section_Button_S.. (2)** to activate the Microsoft Fabric trial.
 
    ![](./Images/gs-11.png)
 
    > **Note:** The trial is enabled to ensure that your account has access to Power BI Pro and Fabric features, including sharing and Copilot experiences used later in this lab.
 
-1. On the **Activate your 60-day fabric trial capacity** window, click **Activate**.
+1. On the **Your Power Bi trail is active** window, click on **Got it**.
 
    ![](./Images/gs-12.png)
-
-1. On the **Successfully upgraded to Microsoft Fabric** window, click **OK** to continue.
-
-   ![](./Images/gs-13.png)
-
+   
 1. Click the **Account manager (1)** icon again and, under the **Profile** section, verify that the **Trial Status (2)** shows the number of days remaining.
 
    ![](./Images/gs-14.png)

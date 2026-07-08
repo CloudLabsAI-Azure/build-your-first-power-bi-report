@@ -35,7 +35,7 @@ In this task, you will align the visuals on the canvas using gridlines and snap-
 
    ![](./Images/e2s1.png)
 
-1. On the **View (1)** ribbon, select the checkboxes for **Gridlines ** and **Snap to grid (2)**.
+1. On the **View (1)** ribbon, select the checkboxes for **Gridlines** and **Snap to grid (2)**.
 
    ![](./Images/e2s2.png)
 
@@ -44,10 +44,9 @@ In this task, you will align the visuals on the canvas using gridlines and snap-
 1. Reposition and resize the visuals so their edges align consistently with the grid on the report canvas.
 
 1. Standardize the spacing between visuals — aim for even gaps on all sides so the page reads as an intentional layout.
+   > **Tip**: You can select multiple visuals with **Ctrl+Click** and use **Format (1) > Align (2)** to align or distribute them precisely.
 
    ![](./Images/L2E2T1S2.png)
-
-   > **Tip**: You can select multiple visuals with **Ctrl+Click** and use **Format > Align** to align or distribute them precisely.
 
 1. On the **View** ribbon, expand the **Themes** gallery.
 
@@ -57,62 +56,100 @@ In this task, you will align the visuals on the canvas using gridlines and snap-
 
    ![](./Images/L2E2T1S4.png)
 
-1. To match Contoso's brand style, expand the **Themes** gallery again and select **Customize current theme**.
+1. To match Contoso's brand style, expand the **Themes (1)** gallery again and select **Customize current theme (2)**.
+
+   ![](./Images/L2E2T1S5.png)
 
 1. In the **Customize theme** dialog, update the following:
 
    - **Name and colors (1)**: Adjust the first two theme colours to the brand palette (for example, `#0F6CBD` and `#212121`)
+   
+     ![](./Images/L2E2T1S6.png)
+
    - **Text (2)**: Set a consistent font family and sizes for titles, cards, and tab headers
    - Click **Apply (3)**
 
-   ![](./Images/L2E2T1S5.png)
+     ![](./Images/L2E2T1S7.png)
 
 1. Review the report page — all visuals should now reflect the applied theme automatically.
 
+   ![](./Images/L2E2T1S9.png)
+
 1. Save the report by selecting **File > Save**.
+
+   ![](./Images/L2E2T1S8.png)
+
+   ![](./Images/L2E2T1S10.png)
 
 ## Task 2: Add conditional formatting
 
 In this task, you will apply conditional formatting so important patterns and exceptions jump out immediately — green means performing, red means look here. This turns a wall of numbers into an instantly readable story.
 
-1. On the report page, select a visual that supports conditional formatting, such as a **table**, **matrix**, or **bar chart**.
+1. On the report page, select the **table visual** titled "Sales by Store & Category" (columns: StoreName, Category, Sum of SalesAmount, % of Total Sales).
 
-   ![](./Images/L2E2T2S1.png)
+   - Click once anywhere inside the table.
+   - Small square handles will appear around its edges, confirming it is selected.
 
-1. With the visual selected, in the **Visualizations** pane, locate the numeric field to be formatted (for example, **Quantity** or **Revenue**).
+     ![](./Images/L2E2T2S1.png)
+
+1. With the visual selected, in the **Visualizations** pane, locate the numeric field to be formatted — in this case, **% of Total Sales**.
+
+   - Below the chart icons in the Visualizations pane, you will see the list of fields for this table: StoreName, Category, Sum of SalesAmount, % of Total Sales.
+   - Find **% of Total Sales** in that list.
+
+      ![](./Images/L2E2T2S2.png)
 
 1. Right-click the field (or open its dropdown menu) and select **Conditional formatting (1)**, then choose **Background color (2)**.
 
-   ![](./Images/L2E2T2S2.png)
+   - Hover over **% of Total Sales** until a small downward arrow (▼) appears next to it.
+   - Click the arrow to open the dropdown menu.
+   - Hover over **Conditional formatting (1)** — a side menu will appear.
+   - Click **Background color (2)**.
+
+     ![](./Images/L2E2T2S3.png)
 
    > **Note**: For chart visuals, conditional formatting is applied from **Format visual > Columns/Bars > Colors > fx** instead.
 
 1. In the **Background color** dialog, configure the following:
 
    - **Format style (1)**: Rules
-   - **What field should we base this on? (2)**: The selected measure or field
-   - Add rules with business-friendly logic **(3)**:
-     - If value is greater than or equal to the high threshold → **Green**
-     - If value is between the medium thresholds → **Amber**
-     - If value is less than the low threshold → **Red**
-   - Click **OK (4)**
+   - **What field should we base this on? (2)**: % of Total Sales (should be pre-filled; select from dropdown if not)
+   - Add rules with business-friendly logic**:
+     - If value is **≥ 4** → **Green** **(3)**
+     - click on **+ New rule (4)**
+     - If value is **between 2 and 4** → **Amber (5)** 
+     - If value is **< 2** → **Red (6)**
+   - Click **OK (7)**
 
-   ![](./Images/L2E2T2S3.png)
+     ![](./Images/L2E2T2S5.png)
 
 1. Review the updated visual and confirm the formatting highlights high, medium, and low performers as intended.
 
-   ![](./Images/L2E2T2S4.png)
+   - The % of Total Sales column should now display colored cells: green, amber, or red based on performance.
 
-1. Repeat the process on a second element using a different formatting type — for example, add **Data bars** or **Icons** to a table column:
+     ![](./Images/L2E2T2S6.png)
 
-   - Open the field's **Conditional formatting** menu and select **Data bars (1)** or **Icons (2)**
-   - Configure the scale or icon rules and click **OK (3)**
+1. Repeat the process on a second element using a different formatting type — add **Data bars** to the **Sum of SalesAmount** column:
 
-   ![](./Images/L2E2T2S5.png)
+   - Hover over **Sum of SalesAmount** in the field list.
+   - Click the ▼ arrow → **Conditional formatting (1)** → **Data bars (2)**.
+   - Default settings are sufficient — click **OK (3)**.
 
-1. Save the report.
+     ![](./Images/L2E2T2S7.png)
 
-> **✅ Validation**: Confirm that at least one visual displays meaningful rule-based formatting that improves interpretation of business performance.
+     ![](./Images/L2E2T2S8.png)
+
+1. Review and Save the report.
+
+   - final report looks like this after applying all conditional formating
+
+     ![](./Images/L2E2T2S9.png)
+
+   - Press **Ctrl + S**, or go to **File (1) > Save (2)**.
+   
+      ![](./Images/L2E2T1S8.png)
+
+      ![](./Images/L2E2T1S10.png)
 
 ## Task 3: Add background images, shapes, and subtle design enhancements
 
@@ -373,4 +410,4 @@ In this exercise, you have accomplished the following:
 
 ### You have successfully completed the lab. Click on **Next >>**.
 
-![](./Images/gs-next.png.png)
+![](./Images/gs-next.png)

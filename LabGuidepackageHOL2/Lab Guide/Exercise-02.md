@@ -1,356 +1,372 @@
-# Exercise 1: Publish and Share Your Work
+# Exercise 2: Create a Visually Engaging Dashboard
 
 ### Estimated Duration: 60 Minutes
 
 ## 📘 Scenario
 
-The **Item Sales Report** — a pre-built `.pbix` file provided in your lab environment — currently lives only in Power BI Desktop on your lab machine. Contoso Retail's leadership team wants this report available in the cloud — viewable from any device, summarized in a single executive dashboard, shared with the right people at the right permission level, and refreshed automatically every day.
+The Contoso Retail report is now live in the Power BI Service — but a report full of correct numbers can still fail its audience if it is hard to read or dull to look at. The executive team has asked for a **board-ready** experience: consistent branding, instantly readable performance indicators, richer visuals, and interactivity that lets one page do the work of several.
 
-In this exercise, you will move your report to the Power BI Service and make it available to your audience: you will publish the report and its semantic model, build a dashboard from its key visuals, review the three primary sharing methods, and configure scheduled refresh.
+In this exercise, you will apply design polish so the dashboard is ready for the board: a layout grid and brand theme, conditional formatting, background and shape design elements, a custom AppSource visual, interactive tooltips, bookmarks and buttons, and finally an AI-generated narrative summary using Copilot.
 
 ## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Launch the environment and open your working report
-- Task 2: Power BI Service – Creating a Workspace
-- Task 3: Publish from Power BI Desktop to the Power BI Service
-- Task 4: Build a dashboard from report tiles
-- Task 5: Configure sharing (workspace roles, apps, links)
-- Task 6: Set up scheduled refresh
+- Task 1: Apply a layout grid and a theme (brand colours)
+- Task 2: Add conditional formatting
+- Task 3: Add background images, shapes, and subtle design enhancements
+- Task 4: Add custom and third-party visuals from AppSource
+- Task 5: Add tooltips, bookmarks, and buttons for interactivity
+- Task 6: Generate a narrative summary with Copilot
 
 ## 🧩 Architecture Diagram
 
-   ![](./Images/arch-exercise-01.png)
+   ![](./Images/arch-exercise-02.png)
 
-## Task 1: Launch the environment and open your working report
+## Task 1: Apply a layout grid and a theme (brand colours)
 
-In this task, you will open Power BI Desktop on the lab virtual machine and load the pre-built Item Sales Report provided for this lab. Verifying the report opens cleanly is an important checkpoint before publishing — any broken visuals or data errors will be carried into the Power BI Service.
+In this task, you will align the visuals on the canvas using gridlines and snap-to-grid, and apply a consistent theme. Alignment and coordinated colours are the fastest way to make a report look professionally designed rather than assembled.
 
-1. On the lab VM, from the desktop or Start menu, open **Power BI Desktop**.
+1. Return to **Power BI Desktop** and open the **StorePerformanceReport** if it is not already open.
 
-   ![](./Images/images/exercise-1/L2E1T1S1.png)
+1. Navigate to the report page that will be enhanced for executive presentation.
 
-1. Click on the **Sign-in icon** located in the top-right corner.
+1. On the **View** ribbon, select the checkboxes for **Gridlines (1)** and **Snap to grid (2)**.
 
-    ![](./Images/images/exercise-1/L2E1T1S2.png)
+   ![](./Images/L2E2T1S1.png)
 
-1. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+   > **Note**: If prompted that snapping applies to objects as you move them, click **OK** to continue.
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+1. Reposition and resize the visuals so their edges align consistently with the grid on the report canvas.
 
-     ![](./Images/images/exercise-1/L2E1T1S3.png) 
+1. Standardize the spacing between visuals — aim for even gaps on all sides so the page reads as an intentional layout.
 
-1. After clicking Continue, you will be prompted to sign in again. Use the credentials provided below to sign in, and then click **Next (2)** to proceed.
+   ![](./Images/L2E2T1S2.png)
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   > **Tip**: You can select multiple visuals with **Ctrl+Click** and use **Format > Align** to align or distribute them precisely.
 
-     ![](./Images/images/exercise-1/L2E1T1S4.png)
+1. On the **View** ribbon, expand the **Themes** gallery.
 
-1. Enter the temporary access pass and click on **Sign in (2)**
+   ![](./Images/L2E2T1S3.png)
 
-   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
+1. Select an appropriate built-in theme that suits an executive audience — subtle colours with good contrast, such as **Executive** or **Accessible City Park**.
 
-     ![02](./Images/images/exercise-1/L2E1T1S5.png)
+   ![](./Images/L2E2T1S4.png)
 
-1. For the pop-up **Automatically sign in to all desktop apps and websites on this device?** window, select **No,this app only**
+1. To match Contoso's brand style, expand the **Themes** gallery again and select **Customize current theme**.
 
-   ![02](./Images/images/exercise-1/L2E1T1S6.png)
+1. In the **Customize theme** dialog, update the following:
 
-1. On the **Power BI free license assigned** window, click on **Ok**.
+   - **Name and colors (1)**: Adjust the first two theme colours to the brand palette (for example, `#0F6CBD` and `#212121`)
+   - **Text (2)**: Set a consistent font family and sizes for titles, cards, and tab headers
+   - Click **Apply (3)**
 
-   ![](./Images/images/exercise-1/L2E1T1S7.png)
+   ![](./Images/L2E2T1S5.png)
 
-1. On the **Home** ribbon, click **open (1)** and click **Browse this device (2)**.
+1. Review the report page — all visuals should now reflect the applied theme automatically.
 
-   ![](./Images/images/exercise-1/L2E1T1S8.png)
+1. Save the report by selecting **File > Save**.
 
-1. In the **Open** dialog, navigate to the path **C:\LabFiles (1)** and select the **Item Sales Report.pbix (2)** file, then click **Open (3)**.
+## Task 2: Add conditional formatting
 
-   ![](./Images/images/exercise-1/L2E1T1S9.png)
+In this task, you will apply conditional formatting so important patterns and exceptions jump out immediately — green means performing, red means look here. This turns a wall of numbers into an instantly readable story.
 
-   > **Note**: If the file is not found at this path, check the **Resources/Files** section of your lab environment for the provided **Item Sales Report.pbix**.
+1. On the report page, select a visual that supports conditional formatting, such as a **table**, **matrix**, or **bar chart**.
 
-1. Wait for the report to load completely.
+   ![](./Images/L2E2T2S1.png)
 
-1. Review each report page and confirm that all visuals render correctly without error icons.
+1. With the visual selected, in the **Visualizations** pane, locate the numeric field to be formatted (for example, **Quantity** or **Revenue**).
 
-   ![](./Images/images/exercise-1/L2E1T1S10.png)
+1. Right-click the field (or open its dropdown menu) and select **Conditional formatting (1)**, then choose **Background color (2)**.
 
-1. Click the **Save** icon from the top-left corner to save your workbook with all the changes you've made.
+   ![](./Images/L2E2T2S2.png)
 
-   ![](./Images/images/exercise-1/L2E1T1S11.png)
+   > **Note**: For chart visuals, conditional formatting is applied from **Format visual > Columns/Bars > Colors > fx** instead.
 
-## Task 2: Power BI Service – Creating a Workspace
+1. In the **Background color** dialog, configure the following:
 
-In this task, you will create a workspace in the Power BI Service.
+   - **Format style (1)**: Rules
+   - **What field should we base this on? (2)**: The selected measure or field
+   - Add rules with business-friendly logic **(3)**:
+     - If value is greater than or equal to the high threshold → **Green**
+     - If value is between the medium thresholds → **Amber**
+     - If value is less than the low threshold → **Red**
+   - Click **OK (4)**
 
-1. In the left-hand navigation pane of the Power BI interface, select **Workspaces** to view and manage your available workspaces.
-   
-    ![](./Images/images/exercise-1/L2E1T2S1.png)
+   ![](./Images/L2E2T2S3.png)
 
-1. Click on **+ New workspace** at the bottom of the Workspaces pane. This will open the **Create a workspace** dialog box.
+1. Review the updated visual and confirm the formatting highlights high, medium, and low performers as intended.
 
-    ![](./Images/images/exercise-1/L2E1T2S2.png)
+   ![](./Images/L2E2T2S4.png)
 
-1. On the **Create a workspace** page, provide the following details.
+1. Repeat the process on a second element using a different formatting type — for example, add **Data bars** or **Icons** to a table column:
 
-    - In the **Name** field, enter **DIAD_<inject key="DeploymentID" enableCopy="false"/> (1)**.
+   - Open the field's **Conditional formatting** menu and select **Data bars (1)** or **Icons (2)**
+   - Configure the scale or icon rules and click **OK (3)**
 
-    - In the **Description** field, type **This is DIAD workspace (2)**.
+   ![](./Images/L2E2T2S5.png)
 
-    - Click **Upload (3)** to upload an image that will serve as the workspace logo and help identify your workspace visually.
+1. Save the report.
 
-      ![](./Images/images/exercise-1/L2E1T2S3.png)
+> **✅ Validation**: Confirm that at least one visual displays meaningful rule-based formatting that improves interpretation of business performance.
 
-1. A file browser dialog box will open. Browse to the **DIAD** folder, then navigate to the **Data** folder at `C:\DIAD\DIADL4\Data`. Select the **VanArsdel\_WSLogo** **(1)** file and click **Open** **(2)**.
+## Task 3: Add background images, shapes, and subtle design enhancements
 
-      ![](./Images/images/exercise-1/L2E1T2S4.png)
+In this task, you will add presentation elements — a background, section shapes, and a title banner — that improve structure and professional appearance without reducing usability. The goal is polish, not clutter: design should support the data, never compete with it.
 
-1. Click **Apply** to finalize and create the workspace with your configured settings.
+1. Click an empty area of the report page you are polishing so no visual is selected.
 
-    ![](./Images/images/exercise-1/L2E1T2S5.png)
+1. In the **Visualizations** pane, select **Format page (paintbrush icon)** and expand **Canvas background**.
 
-    > 📌 **Note:** If prompted Introducing task flows, Click on **Got it** to proceed.
+   ![](./Images/L2E2T3S1.png)
 
-    ![](./Images/images/exercise-1/NOTE.png)
+1. Configure the canvas background:
 
-1. Once the **DIAD_<inject key="DeploymentID" enableCopy="false"/>** workspace is created, navigate to **Manage Access (1)** to configure user permissions and access levels.
+   - **Color (1)**: A very light neutral tint from your theme
+   - Or click **Browse (2)** under Image to add the approved branded image from **C:\LabFiles\Images\contoso-background.png**
+   - **Image fit (3)**: Fit
+   - **Transparency (4)**: Adjust (for example, **85%**) so all visuals remain fully readable
 
-    ![](./Images/images/exercise-1/L2E1T2S6.png)
+   ![](./Images/L2E2T3S2.png)
 
-1. On the **Manage Access** window, click on **+Add people or groups (1)** to add new users or service principals to your workspace.
+   > **Note**: Also review the **Wallpaper** setting, which formats the area *outside* the report canvas — useful for widescreen presentation displays.
 
-    ![](./Images/images/exercise-1/L2E1T2S9.png)
+1. On the **Insert** ribbon, select **Shapes (1)** and choose **Rectangle (2)**.
 
-1. On the **+Add people or groups** window, search for the service principal using `https://cloudlabs-v2.ai/` and select it from the search results.
+   ![](./Images/L2E2T3S3.png)
 
-1. In the Add people pane, after selecting the service principle **(1)**, select the appropriate role from the drop down. Choose **Admin (2)** to grant administrative permissions, and then click **Add (3)** to confirm. Make sure that is listed on the **Manage access** window.
+1. Resize and position the rectangle across the top of the page to act as a **title banner**, and format it:
 
-     ![](./Images/images/exercise-1/L2E1T2S7.png)
+   - **Style > Fill (1)**: A primary brand colour
+   - **Border (2)**: Off, or a subtle darker shade
+   - Send it behind other elements if needed using **Format > Send backward**
 
-1. On the **Manage Access** page, you should see that your account and service principle is listed as an **Admin**.
+   ![](./Images/L2E2T3S4.png)
 
-    ![](./Images/images/exercise-1/L2E1T2S8.png)
+1. Add one or two thin **Line** shapes to visually separate sections of the page (for example, KPIs at the top from detail charts below).
 
-## Task 3: Publish from Power BI Desktop to the Power BI Service
+   ![](./Images/L2E2T3S5.png)
 
-In this task, you will publish your report — and the semantic model behind it — from Power BI Desktop into a workspace in the Power BI Service. Publishing is the moment your report stops being a local file and becomes a shared cloud asset.
-
-1. In Power BI Desktop, verify from the top-right corner of the window that you are signed in with your organizational account:
-
-   - **Account:** <inject key="AzureAdUserEmail"></inject>
-
-     ![](./Images/images/exercise-1/L2E1T3S1.png)
-
-1. From the **Home (1)** tab in the top ribbon, click on **Publish (2)** to publish your report to the Power BI Service.
-
-   ![](./Images/images/exercise-1/L2E1T3S2.png)
-
-1. If prompted to save your changes first, click **Save**.
-
-   ![](./Images/images/exercise-1/L2E1T3S3.png)
-
-1. In the **Publish to Power BI** dialog box, select the destination workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select (2)**.
-
-   ![](./Images/images/exercise-1/L2E1T3S4.png)
-
-1. Wait for the publishing process to complete. A success message appears when it is done.
-
-   ![](./Images/images/exercise-1/L2E1T3S5.png)
-
-1. On the success message, click **Open 'Item Sales Report.pbix' in Power BI** to open the published report in the browser.
-
-   ![](./Images/images/exercise-1/L2E1T3S6.png)
-
-1. In the left navigation pane, select **Workspaces (1)** and open **Workspace-<inject key="DeploymentID" enableCopy="false"/> (2)**.
-
-   ![](./Images/images/exercise-1/L2E1T3S7.png)
-
-1. Verify that the workspace now contains **both** of the following items:
-
-   - The **Item Sales Report** (type: Report)
-   - The **Item Sales Report** semantic model (type: Semantic model)
-
-      ![](./Images/images/exercise-1/L2E1T3S8.png)
-
-   > **Note**: The semantic model is published automatically alongside the report. It holds the data, relationships, and measures, and is the object you will configure for scheduled refresh in Task 6.
-
-## Task 4: Build a dashboard from report tiles
-
-In this task, you will create a consolidated executive view by pinning key report visuals to a new dashboard. Unlike a report, a dashboard is a single-page canvas that can combine tiles from multiple reports — ideal for at-a-glance monitoring by leadership.
-
-1. In the Power BI Service, from the workspace, open the **Item Sales Report**.
-
-   ![](./Images/images/exercise-1/L2E1T4S1.png)
-
-1. Navigate to the first report page and identify a visual that represents a key business metric, such as the item-wise sales bar chart.
-
-1. Hover over the visual and select the **Pin visual** icon from the visual header.
-
-   ![](./Images/images/exercise-1/L2E1T4S2.png)
-
-1. In the **Pin to dashboard** window, select **New dashboard (1)** and enter the following name **(2)**, then click **Pin (3)**:
+1. On the **Insert** ribbon, select **Text box** and enter the following page title:
 
    ```
-   Executive Dashboard
+   Executive Performance Dashboard
    ```
 
-   ![](./Images/images/exercise-1/L2E1T4S3.png)
+1. Format the title so it matches the selected report theme — set the font, size (for example, **24pt**), colour (white or a brand colour that contrasts with the banner), and **bold**, then position it on the title banner.
 
-1. When the **Pinned to dashboard** confirmation appears, close it and remain on the report.
+   ![](./Images/L2E2T3S6.png)
 
-   ![](./Images/images/exercise-1/L2E1T4S3.png)
+1. Select one of your main visuals and, in **Format visual > General > Effects**, review the subtle effect options:
 
-1. Repeat the pinning process for additional visuals — this time, in the **Pin to dashboard** window, select **Existing dashboard (1)**, ensure **Executive Dashboard (2)** is selected, and click **Pin (3)**.
+   - **Background** — a soft white/neutral card behind the visual
+   - **Visual border** — with **Rounded corners** (for example, `8 px`)
+   - **Shadow** — a light outer shadow for gentle depth
 
-   ![](./Images/images/exercise-1/L2E1T4S5.png)
+   ![](./Images/L2E2T3S7.png)
 
-1. Pin **at least four visuals** in total, from this page or other report pages, so that together they provide a meaningful executive summary (for example: total revenue, top items by quantity, a trend over time, and a KPI or card visual).
+1. Apply consistent effects across the visuals on the page, then step back and confirm the overall design remains clean, professional, and easy to read.
 
-1. In the left navigation pane, select your workspace and open the **Executive Dashboard**.
+1. Save the report.
 
-   ![](./Images/images/exercise-1/L2E1T4S6.png)
+> **✅ Validation**: Confirm that the report page includes at least one design enhancement — such as a background, shape, or formatted title — while preserving readability and business focus.
 
-1. Rearrange and resize the tiles by dragging them, so the layout reads cleanly — place the single most important metric at the top-left, where the eye lands first.
+## Task 4: Add custom and third-party visuals from AppSource
 
-   ![](./Images/images/exercise-1/L2E1T4S7.png)
+In this task, you will extend the native visualization library by importing a custom visual from AppSource and configuring it with your data. AppSource offers hundreds of Microsoft-certified and third-party visuals such as KPI indicators, gauges, and word clouds.
 
-## Task 5: Configure sharing (workspace roles, apps, links)
+1. In Power BI Desktop, locate the **Visualizations** pane.
 
-In this task, you will review the three primary ways to share content in the Power BI Service — **workspace access** (roles for collaborators), **direct item sharing** (links and invitations for specific reports or dashboards), and **apps** (a packaged, read-only experience for broad audiences) — and understand when to use each.
+1. Click the **ellipses (…) (1)** at the end of the visual icons and select **Get more visuals (2)**.
 
-1. In the Power BI Service, return to **Workspace-<inject key="DeploymentID" enableCopy="false"/>** and review its contents.
+   ![](./Images/L2E2T4S1.png)
 
-   ![](./Images/images/exercise-1/L2E1T5S1.png)
+1. In the **Power BI visuals** (AppSource) window, ensure the **AppSource** tab is selected, and in the search box **(1)**, search for a visual suitable for the reporting scenario, such as:
 
-1. From the upper-right corner of the workspace, click **Manage access**.
+   ```
+   Gauge
+   ```
 
-   ![](./Images/images/exercise-1/L2E1T5S2.png)
+   > **Note**: Other good choices for this scenario include **KPI indicator**, **Bullet chart**, or **Word Cloud**. Prefer visuals with the blue **certified** badge, which have passed Microsoft's code review.
 
-1. In the **Manage access** pane, review the four available workspace roles:
+   ![](./Images/L2E2T4S2.png)
 
-   - **Admin** — full control, including managing workspace access and settings
-   - **Member** — can edit, publish, and share content
-   - **Contributor** — can create and edit content, but cannot manage access
-   - **Viewer** — can only view and interact with content.
+1. Select the visual from the results **(1)** and click **Add (2)**.
 
-1. Click **+ Add people or groups (1)**, enter a test user or group provided in your lab instructions, set the permission to **Viewer (2)** using the dropdown, and click **Add (3)**.
+   ![](./Images/L2E2T4S3.png)
 
-   ![](./Images/images/exercise-1/L2E1T5S4.png)
+1. When the **Import successful** message appears, click **OK**, and confirm that the new visual's icon now appears in the **Visualizations** pane.
 
-   ![](./Images/images/exercise-1/L2E1T5S5.png)
+   ![](./Images/L2E2T4S4.png)
 
-1. Open the **Item Sales Report (1)** and, from the top menu, click **Share (2)**.
+1. Click the new visual's icon to add it to the report canvas, and position it in your layout.
 
-   ![](./Images/images/exercise-1/L2E1T5S6.png)
+1. With the visual selected, populate it from the **Data** pane with the required fields — for example, drag **Quantity** (or a revenue measure) into the visual's value field well.
 
-1. In the **Send link** dialog, review the available direct sharing options:
+   ![](./Images/L2E2T4S5.png)
 
-   - **Sharing with specific people** — enter a name or email to send an invitation
-   - **Copy link** — generate a shareable link with configurable permissions
-   - **Link settings** — control whether recipients can share further or build content on the underlying data
+1. In **Format visual**, configure the visual's options — such as minimum/maximum values, target, colours, and labels — so it matches the report theme.
 
-     ![](./Images/images/exercise-1/L2E1T5S7.png)
+   ![](./Images/L2E2T4S6.png)
 
-1. Click the **link settings (gear/pencil) icon**, review the audience options — **People in your organization**, **People with existing access**, and **Specific people** — and the additional permissions checkboxes, then click **Apply**.
+1. Evaluate whether the visual genuinely improves understanding of the report — if it doesn't add clarity, replace it or remove it.
 
-   ![](./Images/images/exercise-1/L2E1T5S8.png)
+1. Save the report.
 
-1. Close the sharing dialog and return to the workspace.
+> **✅ Validation**: Confirm that at least one AppSource visual has been added to the report and configured with data.
 
-1. From the workspace toolbar, click **Create app**.
+## Task 5: Add tooltips, bookmarks, and buttons for interactivity
 
-   ![](./Images/images/exercise-1/L2E1T5S9.png)
+In this task, you will add interactive components that improve navigation and provide additional context: a **report page tooltip** that reveals extra detail on hover, **bookmarks** that capture alternate view states, and a **button** that lets users switch between them.
 
-1. On the **Setup** tab, review and configure the following:
+### Part A: Create a tooltip page
 
-   - **App name (1)**: `Contoso Executive Insights`
-   - **Description (2)**: `Board-ready sales insights for the Contoso executive team.`
-   - Click **Next: Add content (3)**
+1. At the bottom of the report canvas, click the **+ (New page)** icon to create a new report page, and rename it **Tooltip - Item Detail**.
 
-     ![](./Images/images/exercise-1/L2E1T5S10.png)
+   ![](./Images/L2E2T5S1.png)
 
-1. On the **Content** tab, click **+ Add content (1)**, select the **Item Sales Report** and the **Executive Dashboard (2)**, click **Add (3)**, and review the navigation order, then click **Next: Add audience (4)**.
+1. With no visual selected, open **Format page** and configure:
 
-   ![](./Images/images/exercise-1/L2E1T5S11.png)
+   - **Page information > Allow use as tooltip (1)**: On
+   - **Canvas settings > Type (2)**: Tooltip
 
-1. On the **Audience** tab, review how audiences control who sees which content, and review the audience access options.
+   ![](./Images/L2E2T5S2.png)
 
-   ![](./Images/images/exercise-1/L2E1T5S12.png)
+   > **Note**: The Tooltip canvas size (320 × 240) keeps the pop-up compact. You can choose **Custom** for a slightly larger tooltip if needed.
 
-1. If your environment allows app publishing, click **Publish app** and confirm.
+1. Add one or two small supporting visuals to the tooltip page — for example, a compact card showing revenue and a mini column chart of quantity by month.
 
-   ![](./Images/images/exercise-1/L2E1T5S13.png)
+   ![](./Images/L2E2T5S3.png)
 
-## Task 6: Set up scheduled refresh
+### Part B: Assign the tooltip page to a visual
 
-In this task, you will configure the published semantic model to refresh on a schedule so that the report and dashboard always reflect current data without any manual steps.
+1. Return to the main report page and select the visual that will use the custom tooltip (for example, the item sales bar chart).
 
-1. In the workspace, locate the **Item Sales Report** semantic model.
+1. In **Format visual > General**, expand **Tooltips** and configure:
 
-   ![](./Images/images/exercise-1/L2E1T6S1.png)
+   - **Type (1)**: Report page
+   - **Page (2)**: Tooltip - Item Detail
 
-1. Hover over the semantic model, click the **More options (…) (1)** menu, and select **Settings (2)**.
+   ![](./Images/L2E2T5S4.png)
 
-   ![](./Images/images/exercise-1/L2E1T6S2.png)
+1. Hover over a data point in the visual and confirm the custom tooltip page appears with context filtered to that item.
 
-1. On the settings page, review the available sections:
+   ![](./Images/L2E2T5S5.png)
 
-   - **Gateway and cloud connections**
-   - **Data source credentials**
-   - **Refresh** (scheduled refresh)
-   - **Refresh history** (accessible from the Refresh section or the semantic model's Refresh menu)
+### Part C: Create bookmarks for alternate views
 
-     ![](./Images/images/exercise-1/L2E1T6S3.png)
+1. On the **View** ribbon, select the checkboxes to enable the **Bookmarks (1)** and **Selection (2)** panes.
 
-1. Expand **Data source credentials** and verify whether authentication is required for the data source.
+   ![](./Images/L2E2T5S6.png)
 
-1. If a credentials warning is displayed, click **Edit credentials (1)**, provide the appropriate **Authentication method (2)** for the lab data source, set the **Privacy level (3)** if prompted, and click **Sign in / Save (4)**.
+1. Arrange the report page in its full, detailed state (all visuals visible), then in the **Bookmarks** pane click **Add (1)**. Open the new bookmark's **ellipses (…) (2)** menu, select **Rename (3)**, and name it:
 
-   ![](./Images/L2E1T5S3.png)
+   ```
+   Detailed View
+   ```
 
-   > **Note**: If your data source is an on-premises file, a data gateway is required for refresh. In this lab environment, review the **Gateway and cloud connections** section and note whether a gateway is configured.
+   ![](./Images/L2E2T5S7.png)
 
-1. Expand the **Refresh** section.
+1. Change the page display state — for example, in the **Selection** pane, hide the detail table visual by clicking its **eye icon** — and then add another bookmark named:
 
-1. Toggle **Configure a refresh schedule** (Keep your data up to date) to **On (2)**.
+   ```
+   Summary View
+   ```
 
-1. Configure the schedule as follows:
+   ![](./Images/L2E2T5S8.png)
 
-   - **Refresh frequency (3)**: Daily
-   - **Time zone (1)**: Select your local time zone
-   - Click **Add another time (4)** and set a refresh time, such as **8:00 AM**
+   > **Note**: A bookmark captures the current state of the page, including filters, slicers, visibility, and sort order. Use the bookmark's ellipses menu to control which aspects (Data, Display, Current page) are captured.
 
-     ![](./Images/images/exercise-1/L2E1T6S4.png)
+### Part D: Add a button and wire it to a bookmark
 
-1. Enable the **Send refresh failure notifications** option so the dataset owner is notified when a refresh fails.
+1. On the **Insert** ribbon, select **Buttons (1)** and choose a button style such as **Bookmark** or **Blank (2)**.
 
-   ![](./Images/images/exercise-1/L2E1T6S5.png)
+   ![](./Images/L2E2T5S9.png)
 
-1. Click **Apply** to save the configuration.
+1. Position the button near the top of the page and, in **Format button**, set the **Text** to `Switch View` (formatted to match the theme).
 
-   ![](./Images/images/exercise-1/L2E1T6S6.png)
+1. In **Format button**, toggle **Action (1)** to On and configure:
 
-1. Return to the workspace, hover over the semantic model, and click the **Refresh now (circular arrow)** icon to trigger an on-demand refresh and test your configuration.
+   - **Type (2)**: Bookmark
+   - **Bookmark (3)**: Summary View
 
-   ![](./Images/images/exercise-1/L2E1T6S7.png)
+   ![](./Images/L2E2T5S10.png)
 
-1. click the **More options (…) (1)** menu and open the **Refresh history (2)** for the semantic model and verify that the refresh completed successfully.
+1. Test the interaction by holding **Ctrl** and clicking the button in Power BI Desktop — the page should switch to the Summary View state.
 
-   ![](./Images/images/exercise-1/L2E1T6S8.png)
+   ![](./Images/L2E2T5S11.png)
+
+   > **Tip**: For a complete toggle experience, add a second button on the Summary View that navigates back to the **Detailed View** bookmark.
+
+1. Save the report, then click **Publish** on the **Home** ribbon and republish to **Workspace-<inject key="DeploymentID" enableCopy="false"/>**, choosing **Replace** when prompted, so the enhanced version is live in the Power BI Service.
+
+   ![](./Images/L2E2T5S12.png)
+
+> **✅ Validation**: Confirm that the report includes at least one tooltip-enabled visual and one working button that triggers bookmark-based navigation or a saved view state.
+
+## Task 6: Generate a narrative summary with Copilot
+
+In this task, you will use **Copilot in Power BI**, where available, to generate a plain-language narrative summary of the report for an executive audience — and, just as importantly, learn to validate AI-generated output before it goes anywhere near a stakeholder.
+
+1. Open the enhanced **StorePerformanceReport** in the **Power BI Service** (Copilot is also available in Power BI Desktop if enabled in your environment).
+
+1. From the top ribbon of the report, click the **Copilot** button to open the Copilot pane.
+
+   ![](./Images/L2E2T6S1.png)
+
+   > **Note**: Copilot requires the workspace to be on a supported Fabric capacity (F2 or higher) or Power BI Premium, with Copilot enabled in the tenant settings by an administrator.
+
+1. In the Copilot pane, review the suggested prompts, then select the report page that contains the key executive visuals.
+
+1. In the prompt box, enter the following and press **Send**:
+
+   ```
+   Summarize the key business insights from this report page for an executive audience.
+   ```
+
+   ![](./Images/L2E2T6S2.png)
+
+1. Review the generated narrative in the Copilot pane.
+
+   ![](./Images/L2E2T6S3.png)
+
+1. Refine the output by entering a follow-up prompt that focuses on specific business outcomes, for example:
+
+   ```
+   Focus the summary on the top three items by quantity sold and any notable exceptions.
+   ```
+
+1. **Validate** the generated summary against the visuals and measures in the report — check every number, ranking, and trend claim.
+
+   > **Warning**: Always validate AI-generated output before sharing it with stakeholders. Copilot can misread a trend or misstate a figure; the analyst remains responsible for accuracy.
+
+1. If your environment supports it, add the narrative to the report page — in Power BI Desktop, insert the **Narrative** visual with Copilot from the Visualizations pane — or copy the generated text and record it for later use in your executive briefing.
+
+   ![](./Images/L2E2T6S4.png)
+
+   > **Note**: If Copilot is not available in your environment, locate where the Copilot button would normally appear on the report ribbon, and document the specific dependency preventing its use (for example, capacity SKU, licensing, or a disabled tenant setting).
+
+> **✅ Validation**: Confirm that a narrative summary was generated and reviewed for accuracy, or document the specific licensing or tenant dependency that prevents Copilot use.
+
+> **Congratulations** on completing the exercise! Now, it's time to validate it. Here are the steps:
+>
+> - If you receive a success message, you have successfully completed the lab.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="00000000-0000-0000-0000-000000000002" />
 
 ## 📝 Summary
 
 In this exercise, you have accomplished the following:
 
-- Opened and reviewed the existing report in Power BI Desktop
-- created workspace in the powerbi service
-- Published the report and its semantic model to the Power BI Service
-- Created an Executive Dashboard by pinning key report visuals
-- Reviewed workspace roles, direct sharing, and app publishing
-- Configured and tested scheduled refresh for the semantic model
+- Applied a layout grid and a consistent brand theme
+- Added rule-based conditional formatting to highlight performance
+- Enhanced the page with a background, shapes, a title banner, and subtle effects
+- Imported and configured a custom visual from AppSource
+- Built a report page tooltip, bookmarks, and a bookmark-triggered button
+- Generated and validated a Copilot narrative summary, and republished the enhanced report
 
-### You have successfully completed the exercise. Click on **Next >>** to continue to the next exercise.
+### You have successfully completed the lab. Click on **Next >>**.
 
-![](./Images/gs-next.png)
+![](./Images/gs-next.png.png)

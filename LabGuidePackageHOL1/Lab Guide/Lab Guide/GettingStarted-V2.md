@@ -26,17 +26,9 @@ After completing this lab you will be able to:
 - No prior Power BI, DAX, or Power Query experience required — the lab builds up from a blank Power BI Desktop canvas.
 ## Architecture
  
-The lab builds a small Power BI solution end-to-end. You start with four CSV source tables, shape them in Power Query, build a semantic model with relationships (a classic star schema), add DAX measures, design an interactive report, and publish to the Power BI service.
+The lab builds a small Power BI solution end-to-end. You start with four CSV source tables, shape them in Power Query, build a semantic model with relationships (a classic star schema), add DAX measures, and design an interactive report — all inside Power BI Desktop.
  
-```mermaid
-flowchart LR
-    SRC["Sales, Stores, Products, Dates<br/>(CSV source tables)"] --> PQ["Power Query Editor<br/>connect · clean · type · shape"]
-    PQ --> MODEL["Semantic model<br/>Sales fact + Stores, Products, Dates dimensions"]
-    MODEL --> DAX["DAX measures<br/>Total Sales · % of Total Sales"]
-    MODEL --> RPT["Store Performance report<br/>KPI cards · charts · slicers · drill-down"]
-    DAX --> RPT
-    RPT --> SVC["Power BI Service<br/>publish and share"]
-```
+![Power BI Store Performance architecture](../media/architecture.png)
  
 ### Component details
  
@@ -48,9 +40,6 @@ flowchart LR
 | Relationships | Three one-to-many links: `Stores` → `Sales`, `Products` → `Sales`, `Dates` → `Sales`. Cross-filter direction is Single. |
 | DAX measures | Explicit measures written on the model. `Total Sales` sums `SalesAmount`; `% of Total Sales` returns each row's contribution to the grand total using `DIVIDE` and `ALL`. |
 | Store Performance report | A single interactive page with KPI cards (Total Sales, Total Units, Top Store), a bar chart, line chart, table, and map, plus slicers, a page-level filter, drill-down on the line chart, and cross-filtering between visuals. |
-| Power BI Service | The cloud service where the finished report is published, shared, and (optionally) scheduled for refresh. |
- 
-
 ## 🚀 Getting Started with the Lab
 
 Welcome to the **Publish, Share, and Enhance User Experience in Power BI** hands-on lab! We've prepared a seamless environment for you to explore and learn about publishing, sharing, and enhancing Power BI content. Let's begin by making the most of this experience.

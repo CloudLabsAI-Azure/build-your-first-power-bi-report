@@ -104,23 +104,15 @@ In this task, you will create a workspace in the Power BI Service.
 
     - In the **Description** field, type **This is Power BI workspace (2)**.
 
-    - Click **Upload (3)** to upload an image that will serve as the workspace logo and help identify your workspace visually.
+    - Click **Apply (3)**.
 
-      ![](./Images/images/exercise-1/L2E1T2S3.png)
-
-1. A file browser dialog box will open. Browse to the **DIAD** folder, then navigate to the **Data** folder at `C:\DIAD\DIADL4\Data`. Select the **VanArsdel\_WSLogo** **(1)** file and click **Open** **(2)**.
-
-      ![](./Images/images/exercise-1/L2E1T2S4.png)
-
-1. Click **Apply** to finalize and create the workspace with your configured settings.
-
-    ![](./Images/images/exercise-1/L2E1T2S5.png)
+      ![](./Images/images/exercise-1/e1s5.png)
 
     > 📌 **Note:** If prompted Introducing task flows, Click on **Got it** to proceed.
 
     ![](./Images/images/exercise-1/NOTE.png)
 
-1. Once the **DIAD_<inject key="DeploymentID" enableCopy="false"/>** workspace is created, navigate to **Manage Access (1)** to configure user permissions and access levels.
+1. Once the **PowerBI_<inject key="DeploymentID" enableCopy="false"/>** workspace is created, navigate to **Manage Access (1)** to configure user permissions and access levels.
 
     ![](./Images/images/exercise-1/L2E1T2S6.png)
 
@@ -150,7 +142,7 @@ In this task, you will publish your report — and the semantic model behind it 
 
 1. From the **Home (1)** tab in the top ribbon, click on **Publish (2)** to publish your report to the Power BI Service.
 
-   ![](./Images/images/exercise-1/L2E1T3S2.png)
+   ![](./Images/images/exercise-1/e1s6.png)
 
 1. If prompted to save your changes first, click **Save**.
 
@@ -158,26 +150,24 @@ In this task, you will publish your report — and the semantic model behind it 
 
 1. In the **Publish to Power BI** dialog box, select the destination workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select (2)**.
 
-   ![](./Images/images/exercise-1/L2E1T3S4.png)
+   ![](./Images/images/exercise-1/e1s7.png)
 
 1. Wait for the publishing process to complete. A success message appears when it is done.
 
-   ![](./Images/images/exercise-1/L2E1T3S5.png)
-
 1. On the success message, click **Open 'StorePerformanceReport.pbix' in Power BI** to open the published report in the browser.
 
-   ![](./Images/images/exercise-1/L2E1T3S6.png)
+   ![](./Images/images/exercise-1/e1s8.png)
 
 1. In the left navigation pane, select **Workspaces (1)** and open **Workspace-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-   ![](./Images/images/exercise-1/L2E1T3S7.png)
+   ![](./Images/images/exercise-1/e1s9.png)
 
 1. Verify that the workspace now contains **both** of the following items:
 
    - The **StorePerformanceReport** (type: Report)
    - The **StorePerformanceReport** semantic model (type: Semantic model)
 
-      ![](./Images/images/exercise-1/L2E1T3S8.png)
+      ![](./Images/images/exercise-1/e1s10.png)
 
    > **Note**: The semantic model is published automatically alongside the report. It holds the data, relationships, and measures, and is the object you will configure for scheduled refresh in Task 6.
 
@@ -187,13 +177,15 @@ In this task, you will create a consolidated executive view by pinning key repor
 
 1. In the Power BI Service, from the workspace, open the **StorePerformanceReport**.
 
-   ![](./Images/images/exercise-1/L2E1T4S1.png)
+   ![](./Images/images/exercise-1/e1s11.png)
 
-1. Navigate to the first report page and identify a visual that represents a key business metric, such as the item-wise sales bar chart.
+1. Navigate to the report page and identify a visual that represents a key business metric, such as sales trend.
 
-1. Hover over the visual and select the **Pin visual** icon from the visual header.
+   ![](./Images/images/exercise-1/e1s12.png)
 
-   ![](./Images/images/exercise-1/L2E1T4S2.png)
+1. Click on the visual and select the **Pin visual** icon from the visual header.
+
+   ![](./Images/images/exercise-1/e1s13.png)
 
 1. In the **Pin to dashboard** window, select **New dashboard (1)** and enter the following name **(2)**, then click **Pin (3)**:
 
@@ -201,7 +193,7 @@ In this task, you will create a consolidated executive view by pinning key repor
    Executive Dashboard
    ```
 
-   ![](./Images/images/exercise-1/L2E1T4S3.png)
+   ![](./Images/images/exercise-1/e1s14.png)
 
 1. When the **Pinned to dashboard** confirmation appears, close it and remain on the report.
 
@@ -209,17 +201,17 @@ In this task, you will create a consolidated executive view by pinning key repor
 
 1. Repeat the pinning process for additional visuals — this time, in the **Pin to dashboard** window, select **Existing dashboard (1)**, ensure **Executive Dashboard (2)** is selected, and click **Pin (3)**.
 
-   ![](./Images/images/exercise-1/L2E1T4S5.png)
+   ![](./Images/images/exercise-1/e1s15.png)
 
-1. Pin **at least four visuals** in total, from this page or other report pages, so that together they provide a meaningful executive summary (for example: total revenue, top items by quantity, a trend over time, and a KPI or card visual).
+1. Pin **at least four visuals** in total, from this page, so that together they provide a meaningful executive summary (for example: total revenue, top items by store, a trend over time).
 
 1. In the left navigation pane, select your workspace and open the **Executive Dashboard**.
 
-   ![](./Images/images/exercise-1/L2E1T4S6.png)
+   ![](./Images/images/exercise-1/e1s16.png)
 
 1. Rearrange and resize the tiles by dragging them, so the layout reads cleanly — place the single most important metric at the top-left, where the eye lands first.
 
-   ![](./Images/images/exercise-1/L2E1T4S7.png)
+   ![](./Images/images/exercise-1/e1s17.png)
 
 ## Task 5: Configure sharing (workspace roles, apps, links)
 
@@ -227,7 +219,7 @@ In this task, you will review the three primary ways to share content in the Pow
 
 1. In the Power BI Service, return to **Workspace-<inject key="DeploymentID" enableCopy="false"/>** and review its contents.
 
-   ![](./Images/images/exercise-1/L2E1T5S1.png)
+   ![](./Images/images/exercise-1/e1s18.png)
 
 1. From the upper-right corner of the workspace, click **Manage access**.
 
@@ -274,31 +266,33 @@ In this task, you will review the three primary ways to share content in the Pow
    - **Description (2)**: `Board-ready sales insights for the Contoso executive team.`
    - Click **Next: Add content (3)**
 
-     ![](./Images/images/exercise-1/L2E1T5S10.png)
+     ![](./Images/images/exercise-1/e1s19.png)
 
 1. On the **Content** tab, click **+ Add content (1)**, select the **StorePerformanceReport** and the **Executive Dashboard (2)**, click **Add (3)**, and review the navigation order, then click **Next: Add audience (4)**.
 
-   ![](./Images/images/exercise-1/L2E1T5S11.png)
+   ![](./Images/images/exercise-1/e1s20.png)
 
 1. On the **Audience** tab, review how audiences control who sees which content, and review the audience access options.
 
-   ![](./Images/images/exercise-1/L2E1T5S12.png)
+   ![](./Images/images/exercise-1/e1s21.png)
 
-1. If your environment allows app publishing, click **Publish app** and confirm.
+1. If your environment allows app publishing, click **Publish app** and confirm. Once app is successfully published. Click **Go to app**.
 
-   ![](./Images/images/exercise-1/L2E1T5S13.png)
+   ![](./Images/images/exercise-1/e1s22.png)
 
 ## Task 6: Set up scheduled refresh
 
 In this task, you will configure the published semantic model to refresh on a schedule so that the report and dashboard always reflect current data without any manual steps.
 
-1. In the workspace, locate the **StorePerformanceReport** semantic model.
+1. Navigate back to power bi home page.
 
-   ![](./Images/images/exercise-1/L2E1T6S1.png)
+1. In the PowerBI workspace, locate the **StorePerformanceReport** semantic model.
+
+   ![](./Images/images/exercise-1/e1s23.png)
 
 1. Hover over the semantic model, click the **More options (…) (1)** menu, and select **Settings (2)**.
 
-   ![](./Images/images/exercise-1/L2E1T6S2.png)
+   ![](./Images/images/exercise-1/e1s24.png)
 
 1. On the settings page, review the available sections:
 
@@ -307,43 +301,38 @@ In this task, you will configure the published semantic model to refresh on a sc
    - **Refresh** (scheduled refresh)
    - **Refresh history** (accessible from the Refresh section or the semantic model's Refresh menu)
 
-     ![](./Images/images/exercise-1/L2E1T6S3.png)
+     ![](./Images/images/exercise-1/e1s25.png)
 
 1. Expand **Data source credentials** and verify whether authentication is required for the data source.
 
-1. If a credentials warning is displayed, click **Edit credentials (1)**, provide the appropriate **Authentication method (2)** for the lab data source, set the **Privacy level (3)** if prompted, and click **Sign in / Save (4)**.
+1. If a credentials warning is displayed, click **Edit credentials (1)**, provide the Authentication method as **annonymous (2)** for the lab data source, and click **Sign in (3)**.
 
-   ![](./Images/L2E1T5S3.png)
+   ![](./Images/images/exercise-1/e1s27.png)
 
-   > **Note**: If your data source is an on-premises file, a data gateway is required for refresh. In this lab environment, review the **Gateway and cloud connections** section and note whether a gateway is configured.
+   ![](./Images/images/exercise-1/e1s26.png)
+
+   > **Note:** Repeat the steps for all four files.
 
 1. Expand the **Refresh** section.
 
-1. Toggle **Configure a refresh schedule** (Keep your data up to date) to **On (2)**.
-
-1. Configure the schedule as follows:
-
-   - **Refresh frequency (3)**: Daily
    - **Time zone (1)**: Select your local time zone
+   - Toggle **Configure a refresh schedule** (Keep your data up to date) to **On (2)**.
+   - **Refresh frequency (3)**: Daily
    - Click **Add another time (4)** and set a refresh time, such as **8:00 AM**
+   - Enable the **Send refresh failure notifications** option so the dataset owner is notified when a refresh fails.
+   - Click **Apply (5)**.
 
-     ![](./Images/images/exercise-1/L2E1T6S4.png)
-
-1. Enable the **Send refresh failure notifications** option so the dataset owner is notified when a refresh fails.
-
-   ![](./Images/images/exercise-1/L2E1T6S5.png)
-
-1. Click **Apply** to save the configuration.
-
-   ![](./Images/images/exercise-1/L2E1T6S6.png)
+     ![](./Images/images/exercise-1/s1s28.png)
 
 1. Return to the workspace, hover over the semantic model, and click the **Refresh now (circular arrow)** icon to trigger an on-demand refresh and test your configuration.
 
-   ![](./Images/images/exercise-1/L2E1T6S7.png)
+   ![](./Images/images/exercise-1/e1s29.png)
 
 1. click the **More options (…) (1)** menu and open the **Refresh history (2)** for the semantic model and verify that the refresh completed successfully.
 
-   ![](./Images/images/exercise-1/L2E1T6S8.png)
+   ![](./Images/images/exercise-1/e1s30.png)
+   
+   ![](./Images/images/exercise-1/e1s31.png)
 
 ## 📝 Summary
 

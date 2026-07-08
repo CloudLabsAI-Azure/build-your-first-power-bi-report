@@ -111,25 +111,7 @@ In this task, you will create a workspace in the Power BI Service.
     > 📌 **Note:** If prompted Introducing task flows, Click on **Got it** to proceed.
 
     ![](./Images/images/exercise-1/NOTE.png)
-
-1. Once the **PowerBI_<inject key="DeploymentID" enableCopy="false"/>** workspace is created, navigate to **Manage Access (1)** to configure user permissions and access levels.
-
-    ![](./Images/images/exercise-1/L2E1T2S6.png)
-
-1. On the **Manage Access** window, click on **+Add people or groups (1)** to add new users or service principals to your workspace.
-
-    ![](./Images/images/exercise-1/L2E1T2S9.png)
-
-1. On the **+Add people or groups** window, search for the service principal using `https://cloudlabs-v2.ai/` and select it from the search results.
-
-1. In the Add people pane, after selecting the service principle **(1)**, select the appropriate role from the drop down. Choose **Admin (2)** to grant administrative permissions, and then click **Add (3)** to confirm. Make sure that is listed on the **Manage access** window.
-
-     ![](./Images/images/exercise-1/L2E1T2S7.png)
-
-1. On the **Manage Access** page, you should see that your account and service principle is listed as an **Admin**.
-
-    ![](./Images/images/exercise-1/L2E1T2S8.png)
-
+    
 ## Task 3: Publish from Power BI Desktop to the Power BI Service
 
 In this task, you will publish your report — and the semantic model behind it — from Power BI Desktop into a workspace in the Power BI Service. Publishing is the moment your report stops being a local file and becomes a shared cloud asset.
@@ -148,7 +130,7 @@ In this task, you will publish your report — and the semantic model behind it 
 
    ![](./Images/images/exercise-1/L2E1T3S3.png)
 
-1. In the **Publish to Power BI** dialog box, select the destination workspace **Workspace-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select (2)**.
+1. In the **Publish to Power BI** dialog box, select the destination workspace **PowerBI_<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select (2)**.
 
    ![](./Images/images/exercise-1/e1s7.png)
 
@@ -158,14 +140,14 @@ In this task, you will publish your report — and the semantic model behind it 
 
    ![](./Images/images/exercise-1/e1s8.png)
 
-1. In the left navigation pane, select **Workspaces (1)** and open **Workspace-<inject key="DeploymentID" enableCopy="false"/> (2)**.
+1. In the left navigation pane, select **Workspaces (1)** and open **PowerBI_<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
    ![](./Images/images/exercise-1/e1s9.png)
 
 1. Verify that the workspace now contains **both** of the following items:
 
-   - The **StorePerformanceReport** (type: Report)
-   - The **StorePerformanceReport** semantic model (type: Semantic model)
+   - The **StorePerformanceReport** (Type: Report)
+   - The **StorePerformanceReport** semantic model (T    ype: Semantic model)
 
       ![](./Images/images/exercise-1/e1s10.png)
 
@@ -175,7 +157,7 @@ In this task, you will publish your report — and the semantic model behind it 
 
 In this task, you will create a consolidated executive view by pinning key report visuals to a new dashboard. Unlike a report, a dashboard is a single-page canvas that can combine tiles from multiple reports — ideal for at-a-glance monitoring by leadership.
 
-1. In the Power BI Service, from the workspace, open the **StorePerformanceReport**.
+1. In the Power BI Service, from the workspace, open the **StorePerformanceReport** (Type: Report).
 
    ![](./Images/images/exercise-1/e1s11.png)
 
@@ -195,7 +177,7 @@ In this task, you will create a consolidated executive view by pinning key repor
 
    ![](./Images/images/exercise-1/e1s14.png)
 
-1. When the **Pinned to dashboard** confirmation appears, close it and remain on the report.
+1. When the **Pinned to dashboard** confirmation appears, **close** it and remain on the report.
 
    ![](./Images/images/exercise-1/L2E1T4S3.png)
 
@@ -205,7 +187,7 @@ In this task, you will create a consolidated executive view by pinning key repor
 
 1. Pin **at least four visuals** in total, from this page, so that together they provide a meaningful executive summary (for example: total revenue, top items by store, a trend over time).
 
-1. In the left navigation pane, select your workspace and open the **Executive Dashboard**.
+1. In the left navigation pane, select your workspace **PowerBI_<inject key="DeploymentID" enableCopy="false"/> (1)** and open the **Executive Dashboard (2)**.
 
    ![](./Images/images/exercise-1/e1s16.png)
 
@@ -217,7 +199,7 @@ In this task, you will create a consolidated executive view by pinning key repor
 
 In this task, you will review the three primary ways to share content in the Power BI Service — **workspace access** (roles for collaborators), **direct item sharing** (links and invitations for specific reports or dashboards), and **apps** (a packaged, read-only experience for broad audiences) — and understand when to use each.
 
-1. In the Power BI Service, return to **Workspace-<inject key="DeploymentID" enableCopy="false"/>** and review its contents.
+1. In the Power BI Service, return to **PowerBI_<inject key="DeploymentID" enableCopy="false"/>** and review its contents.
 
    ![](./Images/images/exercise-1/e1s18.png)
 
@@ -232,11 +214,19 @@ In this task, you will review the three primary ways to share content in the Pow
    - **Contributor** — can create and edit content, but cannot manage access
    - **Viewer** — can only view and interact with content.
 
-1. Click **+ Add people or groups (1)**, enter a test user or group provided in your lab instructions, set the permission to **Viewer (2)** using the dropdown, and click **Add (3)**.
+1. On the **Manage Access** window, click on **+Add people or groups (1)** to add new users or service principals to your workspace.
 
-   ![](./Images/images/exercise-1/L2E1T5S4.png)
+    ![](./Images/images/exercise-1/L2E1T2S9.png)
 
-   ![](./Images/images/exercise-1/L2E1T5S5.png)
+1. On the **+Add people or groups** window, search for the service principal using `https://aec-svc/` and select it from the search results.
+
+1. In the Add people pane, after selecting the service principle **(1)**, select the appropriate role from the drop down. Choose **Admin (2)** to grant administrative permissions, and then click **Add (3)** to confirm. Make sure that is listed on the **Manage access** window.
+
+     ![](./Images/images/exercise-1/L2E1T2S7.png)
+
+1. On the **Manage Access** page, you should see that your account and service principle is listed as an **Admin**.
+
+    ![](./Images/images/exercise-1/L2E1T2S8.png)
 
 1. Open the **StorePerformanceReport (1)** and, from the top menu, click **Share (2)**.
 
@@ -276,9 +266,15 @@ In this task, you will review the three primary ways to share content in the Pow
 
    ![](./Images/images/exercise-1/e1s21.png)
 
-1. If your environment allows app publishing, click **Publish app** and confirm. Once app is successfully published. Click **Go to app**.
+1. If your environment allows app publishing, click **Publish** and confirm. Once app is successfully published. Click **Go to app**.
+
+   ![](./Images/images/exercise-1/notepowerbi.png)
 
    ![](./Images/images/exercise-1/e1s22.png)
+
+1. After entering the app, the interface will look like this:
+
+   ![](./Images/images/exercise-1/applook.png)
 
 ## Task 6: Set up scheduled refresh
 
@@ -318,7 +314,7 @@ In this task, you will configure the published semantic model to refresh on a sc
    - **Time zone (1)**: Select your local time zone
    - Toggle **Configure a refresh schedule** (Keep your data up to date) to **On (2)**.
    - **Refresh frequency (3)**: Daily
-   - Click **Add another time (4)** and set a refresh time, such as **8:00 AM**
+   - Click **Add another time** and set a refresh time, such as **8:00 AM (4)**
    - Enable the **Send refresh failure notifications** option so the dataset owner is notified when a refresh fails.
    - Click **Apply (5)**.
 
@@ -331,7 +327,9 @@ In this task, you will configure the published semantic model to refresh on a sc
 1. click the **More options (…) (1)** menu and open the **Refresh history (2)** for the semantic model and verify that the refresh completed successfully.
 
    ![](./Images/images/exercise-1/e1s30.png)
-   
+
+1. Verify that the refresh history shows a successful refresh status for the semantic model.
+
    ![](./Images/images/exercise-1/e1s31.png)
 
 ## 📝 Summary

@@ -157,60 +157,74 @@ In this task, you will add presentation elements — a background, section shape
 
 1. Click an empty area of the report page you are polishing so no visual is selected.
 
-1. In the **Visualizations** pane, select **Format page (paintbrush icon)** and expand **Canvas background**.
+   - Click anywhere on the grey/white space around your charts (not on top of any chart or table).
+   - This ensures nothing is selected before you change the page settings.
+      
+      ![](./Images/L2E2T3S1.png)
 
-   ![](./Images/L2E2T3S1.png)
-
-1. Configure the canvas background:
-
-   - **Color (1)**: A very light neutral tint from your theme
-   - Or click **Browse (2)** under Image to add the approved branded image from **C:\LabFiles\Images\contoso-background.png**
-   - **Image fit (3)**: Fit
-   - **Transparency (4)**: Adjust (for example, **85%**) so all visuals remain fully readable
+1. In the **Visualizations** pane, select **Format page (paintbrush icon) (1)** and expand **Canvas background (2)**.
 
    ![](./Images/L2E2T3S2.png)
 
-   > **Note**: Also review the **Wallpaper** setting, which formats the area *outside* the report canvas — useful for widescreen presentation displays.
+1. Configure the canvas background:
 
-1. On the **Insert** ribbon, select **Shapes (1)** and choose **Rectangle (2)**.
+   - **Color**: Click the color box and choose a very light neutral tint (for example, light grey or pale blue) from your theme.
+   - **Transparency**: Adjust (for example, **15%**) so all visuals remain fully readable.
 
-   ![](./Images/L2E2T3S3.png)
+     ![](./Images/L2E2T3S3.png)
 
-1. Resize and position the rectangle across the top of the page to act as a **title banner**, and format it:
-
-   - **Style > Fill (1)**: A primary brand colour
-   - **Border (2)**: Off, or a subtle darker shade
-   - Send it behind other elements if needed using **Format > Send backward**
+1. On the **Insert (1)** ribbon, select **Shapes (2)** and choose **Rectangle (3)**.
 
    ![](./Images/L2E2T3S4.png)
 
-1. Add one or two thin **Line** shapes to visually separate sections of the page (for example, KPIs at the top from detail charts below).
+1. Resize and position the rectangle across the top of the page to act as a **title banner**, and format it:
 
-   ![](./Images/L2E2T3S5.png)
+   - With the rectangle selected, expand **Style > Fill (1)** in the Format pane and choose a primary brand colour (for example, navy blue).
+   - Set **Border (2)** to **Off**.
 
-1. On the **Insert** ribbon, select **Text box** and enter the following page title:
+      ![](./Images/L2E2T3S5.png)
 
-   ```
-   Executive Performance Dashboard
-   ```
+   - Send it behind other elements if needed by selecting the rectangle and using **Format (1) > Send backward (2)**
 
-1. Format the title so it matches the selected report theme — set the font, size (for example, **24pt**), colour (white or a brand colour that contrasts with the banner), and **bold**, then position it on the title banner.
+      ![](./Images/L2E2T3S6.png)
 
-   ![](./Images/L2E2T3S6.png)
+1. From the **Insert (1)** ribbon, select **Shapes (2)** and choose **Line (3)**. Add one or two thin horizontal lines to visually separate sections of the page, such as the KPI area at the top from the detail charts below.
 
-1. Select one of your main visuals and, in **Format visual > General > Effects**, review the subtle effect options:
-
-   - **Background** — a soft white/neutral card behind the visual
-   - **Visual border** — with **Rounded corners** (for example, `8 px`)
-   - **Shadow** — a light outer shadow for gentle depth
+   ![](./Images/L2E2T3S7-1.png)
 
    ![](./Images/L2E2T3S7.png)
 
+1. On the **Insert (1)** ribbon, select **Text box (2)**.
+
+   ![](./Images/L2E2T3S9.png)
+
+1. Enter the title as below. Format the title so it matches the selected report theme — set the font, size (for example, **24pt**), colour (white or a brand colour that contrasts with the banner), and **bold**, then position it on the title banner.
+   ```
+   Execute Dashboard
+   ```
+   ![](./Images/L2E2T3S10.png)
+
+1. Select one of your main visuals and, in **Format visual > General > Effects**, review the subtle effect options:
+
+   - **Background** — a soft white/neutral card behind the visual.
+   - **Visual border** — with **Rounded corners** (for example, `8 px`).
+   - **Shadow** — a light outer shadow for gentle depth.
+
+      ![](./Images/L2E2T3S11.png)
+
 1. Apply consistent effects across the visuals on the page, then step back and confirm the overall design remains clean, professional, and easy to read.
 
-1. Save the report.
+1. Review and save the report.
 
-> **✅ Validation**: Confirm that the report page includes at least one design enhancement — such as a background, shape, or formatted title — while preserving readability and business focus.
+   - The final report should look like this after applying all changes:
+
+     ![](./Images/L2E2T3S12.png)
+
+   - Press **Ctrl + S**, or go to **File (1) > Save (2)**.
+
+      ![](./Images/L2E2T1S8.png)
+
+      ![](./Images/L2E2T1S10.png)
 
 ## Task 4: Add custom and third-party visuals from AppSource
 

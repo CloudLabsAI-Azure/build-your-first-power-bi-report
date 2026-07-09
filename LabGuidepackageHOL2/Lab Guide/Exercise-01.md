@@ -13,7 +13,7 @@ In this exercise, you will move your report to the Power BI Service and make it 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Launch the environment and open your working report
-- Task 2: Power BI Service – Creating a Workspace
+- Task 2: Create a Workspace
 - Task 3: Publish from Power BI Desktop to the Power BI Service
 - Task 4: Build a dashboard from report tiles
 - Task 5: Configure sharing (workspace roles, apps, links)
@@ -83,11 +83,11 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
    ![](./Images/images/exercise-1/e1s4.png)
 
-## Task 2: Power BI Service – Creating a Workspace
+## Task 2: Create a Workspace
 
 In this task, you will create a workspace in the Power BI Service.
 
-1. Navigate back to Edge browser, and open the Power BI tab.
+1. Navigate back to the Edge browser and open the Power BI tab.
 
 1. In the left-hand navigation pane of the Power BI interface, select **Workspaces** to view and manage your available workspaces.
    

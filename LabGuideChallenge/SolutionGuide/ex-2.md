@@ -1,6 +1,26 @@
-## Task 1:
+# Exercise 2: Stretch goals and submission
 
-2. In **Model view (1)**, verify that the **Dim_Region** table contains the **Region (2)** column.
+### Estimated Duration: 120 Minutes
+
+## Overview
+
+In this exercise, you will enhance the Power BI dashboard by implementing Row-Level Security (RLS), generating AI-powered insights with Copilot, and adding a custom visual for target analysis. You will then publish the report to a Fabric workspace, export it as a PDF, and perform a comprehensive validation to ensure the dashboard is secure, accurate, and ready for business stakeholders.
+
+## Objectives
+
+In this exercise you will:
+
+- Task 1: Apply Row-Level Security by region
+- Task 2: Add a Copilot narrative
+- Task 3: Add a custom visual
+- Task 4: Submit your dashboard (publish to a shared workspace or submit screenshots)
+- Task 5: Self-check against the evaluation rubric (Read-only)
+
+## Task 1: Apply Row-Level Security by region
+
+In this task you will configure Row-Level Security (RLS) by creating region-based security roles using DAX filters on the Dim_Region table. Validate each role using View as to ensure users can access only the data for their assigned region.
+
+1. In **Model view (1)**, verify that the **Dim_Region** table contains the **Region (2)** column.
 
     ![](images1/t1s2.png)
 
@@ -60,7 +80,9 @@
 
     ![](images1/t1s13.png)
 
-## Task 2:
+## Task 2: Add a Copilot narrative
+
+In this task you will use Copilot in Power BI to generate an AI-powered summary of regional revenue performance and add the generated narrative to the report canvas for business insights.
 
 1. On the **Home** tab, select **Copilot (2)** to sign in to Power BI.
 
@@ -106,7 +128,9 @@
 
     ![](images1/t2s11.png)
 
-## Task 3:
+## Task 3: Add a custom visual
+
+In this task you will create a new DAX measure for target revenue and build a Bullet Chart to compare actual revenue against targets, then customize the visual for better presentation.
 
 12. In the **Data** pane, select the **_Measures (1)** table, and then select **New measure (2)**.
 
@@ -160,7 +184,9 @@
 
     ![](images1/t3s12.png)
 
-## Task 4:
+## Task 4: Submit your dashboard (publish to a shared workspace or submit screenshots)
+
+In this task you will save the completed report, publish it to a Fabric workspace, verify the published artifacts, and export the report as a PDF for sharing with stakeholders.
 
 24. Select **File**, and then select **Save as**.
 
@@ -206,7 +232,9 @@
 
     ![](images1/t4s13.png)
 
-## Task 5:
+## Task 5: Self-check against the evaluation rubric (Read-only)
+
+In this task you will review the semantic model, report visuals, interactions, security, AI-generated content, and overall formatting to ensure the dashboard is accurate, secure, and ready for business use.
 
 1. Open **Model view** and verify the data model. Confirm it follows a clean star schema, all relationships are **Many-to-one**, **Single** cross-filter, and **Active**. Ensure all key ID columns (such as **RegionID**, **ProductID**, **CustomerID**, **SalesRepID**, and **OrderID**) are hidden, and verify that **Dim_Date** is still marked as the date table.
 
@@ -225,3 +253,15 @@
 8. Perform a final board-ready review. Confirm the report has a clear title, displays the data refresh date, follows a consistent layout, and is presentation-ready for business stakeholders.
 
 9. Record any remaining issues or improvements identified during the review. Prioritize fixing data accuracy, relationships, and report interactions before making cosmetic formatting changes.
+
+## Summary
+
+In this lab, you:
+
+- Configured and validated Row-Level Security (RLS) to restrict data access by region.
+- Used Copilot to generate an AI-powered narrative summarizing sales performance.
+- Added and customized a Bullet Chart to compare actual revenue against target revenue.
+- Published the completed report to a Fabric workspace and exported it as a PDF.
+- Performed a final quality review to validate the data model, visuals, interactions, security, and overall report readiness.
+
+### You have Successfully completed this lab

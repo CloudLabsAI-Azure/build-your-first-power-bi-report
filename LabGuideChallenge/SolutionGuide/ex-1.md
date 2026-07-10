@@ -1,5 +1,24 @@
+# Exercise 1: Build the dashboard
 
-## Task 1: 
+### Estimated Duration: 120 Minutes
+
+## Overview
+
+In this exercise, you will build a complete Power BI Sales Performance dashboard using a sample sales dataset. You will import and model data, create DAX measures, and design interactive report visuals. You will also apply themes and formatting to produce a professional, board-ready dashboard. Finally, you will validate the report to ensure it is accurate, interactive, and ready for business analysis.
+
+## Objectives
+
+In this exercise you will:
+
+- Task 1: Review the brief and explore the dataset
+- Task 2: Model the data
+- Task 3: Create 3 KPIs
+- Task 4: Create 2 charts and 1 slicer
+- Task 5: Apply a theme
+
+## Task 1: Review the brief and explore the dataset
+
+In this task you will verify that the required CSV dataset files are available and populated with sample data before importing them into Power BI.
 
 1. Open **File Explorer**, navigate to **C:\LabFiles**, and then open the **data** folder.
 
@@ -13,7 +32,9 @@
 
     ![](images/t1s3.png)
 
-## Task 2:
+## Task 2: Model the data
+
+In this task you will import the dataset into Power BI, create the required relationships, configure the date table and hierarchy, hide technical columns, and validate the data model.
 
 1. On the desktop, double-click **Power BI Desktop** to launch the application.
 
@@ -115,7 +136,9 @@
 
     ![](images/t2s20.png)
 
-## Task 3: 
+## Task 3: Create 3 KPIs
+
+In this task you will create DAX measures for key business metrics, format them appropriately, and display them as KPI cards with meaningful titles.
 
 1. Select the **Modeling (1)** tab, and then select **New table (2)**.
 
@@ -225,6 +248,10 @@
 
     ![](images/t3s19.png)
 
+## Task 4: Create 2 charts and 1 slicer
+
+In this task you will create charts and slicers, configure sorting and filtering, and format the visuals to build an interactive sales performance report.
+
 1. On the **Home** tab, select **Transform data (1)** and then choose **Transform data (2)** to open **Power Query Editor**.
 
     ![](images/t4s1.png)
@@ -273,6 +300,10 @@
 
     ![](images/t4s13.png)
 
+## Task 5: Apply a theme
+
+In this task you will apply and customize a report theme, add a dashboard title, and arrange the visuals into a polished, board-ready dashboard.
+
 1. On the **View (1)** tab, scroll through the available themes **(2)** and select the **dark theme (3)** to apply it to the report.
 
     ![](images/t5s1.png)
@@ -296,3 +327,15 @@
 1. Arrange the report visuals to create a dashboard layout. Position the title at the top and place the visuals as shown below.
 
     ![](images/t5s6.png)
+
+## Summary
+
+In this lab, you:
+
+- Verified the sales dataset and imported the required CSV files into Power BI.
+- Built a star schema data model with relationships, a date table, and hierarchies.
+- Created DAX measures and KPI cards to analyze revenue, gross margin, and target attainment.
+- Designed interactive report visuals, including charts and slicers, for sales analysis.
+- Applied a custom theme and formatting to produce a professional, board-ready dashboard.
+
+### You have Successfully completed this lab

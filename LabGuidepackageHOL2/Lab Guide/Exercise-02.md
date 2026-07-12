@@ -53,7 +53,7 @@ In this task, you will align the visuals on the canvas using gridlines and snap-
 
 1. In the **Customize theme** dialog, update the following:
 
-   - **Name and colors (1)**: Adjust the first two theme colours to the brand palette (for example, `#0F6CBD` and `#212121`)
+   - **Name and colours (1)**: Adjust the first two theme colours to the brand palette (for example, `#0F6CBD` and `#212121`)
    
      ![](./Images/L2E2T1S6.png)
 
@@ -130,9 +130,9 @@ In this task, you will apply conditional formatting so important patterns and ex
 
      ![](./Images/L2E2T2S8.png)
 
-1. Review and Save the report.
+1. Review and save the report.
 
-   - final report looks like this after applying all conditional formating
+   - Final report looks like this after applying all conditional formatting
 
      ![](./Images/L2E2T2S9.png)
 
@@ -207,9 +207,9 @@ In this task, you will add presentation elements — a background, section shape
 
 1. Apply consistent effects across the visuals on the page, then step back and confirm the overall design remains clean, professional, and easy to read.
 
-1. Review and Save the report.
+1. Review and save the report.
 
-   - final report looks like this after applying all.
+   - Final report looks like this after applying all.
 
      ![](./Images/L2E2T3S12.png)
 
@@ -245,7 +245,7 @@ Contoso needs to see at a glance which cities beat, met, or missed the sales tar
    - **Category**: `Stores[City]`
    - **Value**: `Sales[Total Sales]`
 
-      ![](./Images/e2t4s6.png)
+      ![](./Images/E2T4S5-1207.png)
 
 5. In **Format visual**, in Data values, set the range, target, and colours so all eight Contoso cities read on a consistent scale (their Total Sales are between about $7,300 and $9,100):
    - **Values > Target**: `8000` — Contoso's H1 city benchmark
@@ -268,7 +268,7 @@ In this task, you will make the dashboard interactive in three ways: a **report-
  
    ![](./Images/L2E2T5S1.png)
 
-1. Right click on the page and rename the new page:
+1. Right-click on the page and rename the new page:
    ```
    Store Detail Tooltip
    ```
@@ -338,7 +338,7 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
       ![](./Images/e1ss15.png)
 
-4. Hover over any bar in the chart. The tooltip page appears, filtered automatically to that store — the two cards recalculate and the mini-bar shows that store's category mix.
+4. Hover over any bar in the chart. The tooltip page appears, filtered automatically to that store — the two cards recalculate, and the mini-bar shows that store's category mix.
 
    ![](./Images/e1ss14.png)
 
@@ -348,11 +348,12 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
    ![](./Images/e1ss16.png)
 
-2. Arrange the page in its **full analyst view** — every visual visible, no slicers filtered. In the **Bookmarks** pane click **Add (1)**, then use the **⋯** menu to **Rename** to `Analyst Detail` (2). 
+2. Arrange the page in its **full analyst view** — every visual visible, no slicers filtered. In the **Bookmarks** pane, click **Add (1)**, then use the **⋯** menu to **Rename** to `Analyst Detail` (2). 
  
    ![](./Images/e1ss17.png)
  
-3. Now build the executive-summary state:
+3. Now build the executive summary:
+
    - In the **Selection** pane, click the **eye icon** next to the **Sales by Store & Category** **table** to hide them.
 
       ![](./Images/e1ss18.png)
@@ -394,11 +395,11 @@ In this task, you will make the dashboard interactive in three ways: a **report-
  
 Contoso's executives want a plain-language summary alongside the visuals. Power BI's **Narrative** visual, powered by Copilot, reads the visuals on the page and generates a written summary with footnoted references to the source visuals.
  
-1. On the report ribbon, click on **Home (1)** tab and click **Copilot (2)** to open the Copilot pane.
+1. On the report ribbon, click on the **Home (1)** tab and click **Copilot (2)** to open the Copilot pane.
 
    ![](./Images/E2T6S1-1207.png)
 
-1. In connect to workspace, Select **PowerBi (1)** workspace. Then **Select Workspace (2)**.
+1. In Connect to workspace, select **Power BI (1)** workspace. Then **Select Workspace (2)**.
       ![](./Images/e1ss25.png)
 
 1. Click an empty area of the canvas. In the **Visualizations** pane, select the **narrative** icon. Power BI reads the visuals on the page and auto-generates a paragraph of contextual insights.
@@ -416,7 +417,7 @@ Contoso's executives want a plain-language summary alongside the visuals. Power 
 
 1. Copilot writes a narrative such as *"Overall total sales are $66,838 across 1,200 units, with Contoso Plaza identified as the top store…"*. Each sentence is footnoted with the visual it draws from. 
 
-   > **Note:** The Copilot response may vary slightly each time you run it, and may not be similar as mentioned above or shared in screenshot. The important part is that the narrative is generated and references the source visuals.
+   > **Note:** The Copilot response may vary slightly each time you run it, and may not be similar as mentioned above or shared in the screenshot. The important part is that the narrative is generated and references the source visuals.
 
 4. Resize and position the narrative visual under the KPI card row. Cross-check every figure against the source visuals — KPI cards, Sales by Store bar chart, and Sales Trend line chart — and edit any wording that misrepresents the data. Save the report.
 
@@ -432,6 +433,6 @@ In this exercise, you have accomplished the following:
 - Enhanced the page with a background, shapes, a title banner, and subtle effects
 - Imported and configured a custom visual from AppSource
 - Built a report page tooltip, bookmarks, and a bookmark-triggered button
-- Generated and validated a Copilot narrative summary, and republished the enhanced report
+- Generated and validated a Copilot narrative summary and republished the enhanced report
 
 ### Congratulations! You have successfully completed the lab. 

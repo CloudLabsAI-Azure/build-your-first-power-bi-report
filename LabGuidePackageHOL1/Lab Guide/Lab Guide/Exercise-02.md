@@ -115,6 +115,8 @@ In this task, you will build one report page with five core visuals: a bar chart
 
       ![](../media/e2s13.png)
 
+      **Note:** If the line Chart is showing data as expected, kindly review the instructions from Page-2, Task-5, **Shape the Sales query**.
+
 
 ### Table — Store × Category sales
 

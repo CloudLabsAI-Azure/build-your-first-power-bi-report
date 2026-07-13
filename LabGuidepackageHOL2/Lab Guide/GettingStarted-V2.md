@@ -1,4 +1,4 @@
-# Publish, Share, and Enhance User Experience in Power BI
+# Power BI Training: Publish, Share & Enhance User Experience
 
 ### Overall Estimated Duration: 2 Hours
 
@@ -59,7 +59,7 @@ We've prepared a seamless environment for you to explore and learn about publish
 
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](./Images/images/gs-01.png)
+![](./Images/guide-1307.png)
 
 ## 🧭 Exploring Your Lab Resources
 
@@ -71,7 +71,7 @@ To get a better understanding of your lab resources and credentials, navigate to
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![](./Images/images/gs-03.png)
+![](./Images/split-1307.png)
 
 ## ⚙️ Managing Your Virtual Machine
 

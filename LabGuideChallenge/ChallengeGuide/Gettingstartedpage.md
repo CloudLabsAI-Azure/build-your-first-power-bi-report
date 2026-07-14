@@ -109,7 +109,7 @@ Feel free to **start, restart, or stop (2)** your virtual machine as needed from
 
       ![](./media/gs8.png)
      
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+1. If you see the pop-up **Stay signed in?**, select **No**.
 
    ![](./media/gs9.png)
 

@@ -8,11 +8,11 @@ You are a Business Intelligence Analyst tasked with building the first version o
 
 ## 📋 Overview
 
-In this exercise, you will build a complete Power BI Sales Performance dashboard using a sample sales dataset. You will import and model data, create DAX measures, and design interactive report visuals. You will also apply themes and formatting to produce a professional, board-ready dashboard. Finally, you will validate the report to ensure it is accurate, interactive, and ready for business analysis.
+In this challenge, you will build a complete Power BI Sales Performance dashboard using a sample sales dataset. You will import and model data, create DAX measures, and design interactive report visuals. You will also apply themes and formatting to produce a professional, board-ready dashboard. Finally, you will validate the report to ensure it is accurate, interactive, and ready for business analysis.
 
 ## 🎯 Objectives
 
-In this exercise, you will:
+In this challenge, you will complete the following tasks:
 
 - Task 1: Review the brief and explore the dataset
 - Task 2: Model the data

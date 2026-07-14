@@ -2,13 +2,18 @@
 
 ### Estimated Duration: 120 Minutes
 
-## 📘 Lab Scenario
+## 📘 Scenario
 
-With the Sales Performance dashboard built, leadership has raised a new concern: regional managers should only see the numbers relevant to their own region, and the board wants the report to speak for itself with an AI-generated narrative rather than requiring a live walkthrough. As the Business Intelligence Analyst, you must lock down the report with Row-Level Security, enrich it with a Copilot-generated summary and a target-tracking visual, and then publish and submit a finished dashboard that will hold up against a formal evaluation rubric.
+Your Challenge 1 dashboard works - but Contoso leadership has two new requirements before it goes to the board:
+
+1. Regional managers must **only see their own region's data**. A manager in North America cannot see Europe's numbers, and vice-versa.
+2. The report must include an **AI-generated narrative** and a clear **Revenue vs. Target** visual, so board members can review it *without a live walkthrough*.
+
+In this challenge you will harden the report with **Row-Level Security (RLS)**, enrich it with **Power BI Copilot** and a **custom AppSource visual**, then **publish** it to Microsoft Fabric and **submit** it for review.
 
 ## 📋 Overview
 
-In this challenge, you will enhance the Power BI dashboard by implementing Row-Level Security (RLS), generating AI-powered insights with Copilot, and adding a custom visual for target analysis. You will then publish the report to a Fabric workspace, export it as a PDF, and perform a comprehensive validation to ensure the dashboard is secure, accurate, and ready for business stakeholders.
+You will add RLS to enforce regional data isolation, generate an AI narrative with Copilot, import the **Bullet Chart by OKVIZ** from AppSource, publish to a Fabric workspace, export to PDF, and self-check against the evaluation rubric.
 
 ## 🎯 Objectives
 

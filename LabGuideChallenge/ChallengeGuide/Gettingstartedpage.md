@@ -73,14 +73,19 @@ The lab moves your work from your local computer to the cloud in a simple flow. 
 The architecture for this lab involves the following key components:
 
 - **CSV Files (`C:\LabFiles\data`):** The seven raw data files (customers, products, dates, regions, sales reps, budget, sales). All your numbers come from here.
+
 - **Visual Studio Code:** A simple text editor. You use it to open a CSV file and take a quick look before importing.
+
 - **Power BI Desktop:** The main app you work in. You build the data model, write DAX, design visuals, apply the theme, and set up security here.
-- **Microsoft AppSource:** A store for extra Power BI visuals. You will get the **Bullet Chart** from here.
-- **Lab Power BI Account:** A special account the lab gives you. It already has Copilot and Fabric access - do **not** use your personal or work account.
+
 - **Microsoft Fabric Workspace:** The cloud location where your report lives after you publish it. This is where security actually takes effect.
+
 - **Semantic Model:** The data and DAX part of your report, stored in the cloud after you publish.
+
 - **Published Report:** The version of your dashboard people open in a web browser.
+
 - **Power BI Copilot:** An AI helper that reads your data and writes a short summary in plain English.
+
 - **Exported PDF:** A saved copy of the report you can email or print - useful when someone wants to read it offline.
 
 ## 🚀 Getting Started with the Lab

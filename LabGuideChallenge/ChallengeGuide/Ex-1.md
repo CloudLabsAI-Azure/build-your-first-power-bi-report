@@ -2,13 +2,13 @@
 
 ### Estimated Duration: 120 Minutes
 
-## 📘 Lab Scenario
+## 📘 Scenario
 
-You are a Business Intelligence Analyst tasked with building the first version of a Sales Performance dashboard for leadership. You have been handed a raw sales dataset: customer, product, region, sales rep, and budget files with no existing data model. Your job is to shape this raw data into a reliable model, surface the key revenue and margin metrics leadership cares about, and present it all in a clean, interactive, board-ready report.
+You are Contoso's **BI Analyst**. Leadership has handed you a raw sales dataset - customer, product, region, sales-rep, budget, and transaction files - but **no existing data model, no measures, and no visuals**. Your job in this challenge is to turn those raw CSVs into the first working version of the **Sales Performance dashboard** the board will review.
 
 ## 📋 Overview
 
-In this challenge, you will build a complete Power BI Sales Performance dashboard using a sample sales dataset. You will import and model data, create DAX measures, and design interactive report visuals. You will also apply themes and formatting to produce a professional, board-ready dashboard. Finally, you will validate the report to ensure it is accurate, interactive, and ready for business analysis.
+You will import a CSV dataset, shape it into a **star schema**, author your first set of **DAX measures**, and design an **interactive, themed report canvas** ready for board consumption. By the end of this challenge, you will have a polished single-page dashboard that answers three business questions: *How much did we sell?*, *Are we profitable?*, and *Are we hitting our targets?*
 
 ## 🎯 Objectives
 

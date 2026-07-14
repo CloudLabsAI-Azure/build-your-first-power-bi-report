@@ -12,7 +12,7 @@ In this exercise, you will enhance the Power BI dashboard by implementing Row-Le
 
 ## 🎯 Objectives
 
-In this exercise you will:
+In this exercise, you will:
 
 - Task 1: Apply Row-Level Security by region
 - Task 2: Add a Copilot narrative
@@ -22,7 +22,7 @@ In this exercise you will:
 
 ## Task 1: Apply Row-Level Security by Region
 
-In this task you will configure Row-Level Security (RLS) by creating region-based security roles using DAX filters on the Dim_Region table. Validate each role using View as to ensure users can access only the data for their assigned region.
+In this task, you will configure Row-Level Security (RLS) by creating region-based security roles using DAX filters on the Dim_Region table. Validate each role using View as to ensure users can access only the data for their assigned region.
 
 1. Open **Modeling** > **Manage roles**.
 
@@ -38,7 +38,7 @@ In this task you will configure Row-Level Security (RLS) by creating region-base
 
 ## Task 2: Add a Copilot Narrative
 
-In this task you will use Copilot in Power BI to generate an AI-powered summary of regional revenue performance and add the generated narrative to the report canvas for business insights.
+In this task, you will use Copilot in Power BI to generate an AI-powered summary of regional revenue performance and add the generated narrative to the report canvas for business insights.
 
 1. Sign in to **Power BI Copilot** using the lab-provided credentials.
 
@@ -52,7 +52,7 @@ In this task you will use Copilot in Power BI to generate an AI-powered summary 
 
 ## Task 3: Add a Custom Visual
 
-In this task you will create a new DAX measure for target revenue and build a Bullet Chart to compare actual revenue against targets, then customize the visual for better presentation.
+In this task, you will create a new DAX measure for target revenue and build a Bullet Chart to compare actual revenue against targets, then customize the visual for better presentation.
 
 1. Create a new DAX measure named **Total Target**.
 
@@ -68,7 +68,7 @@ In this task you will create a new DAX measure for target revenue and build a Bu
 
 ## Task 4: Submit Your Dashboard
 
-In this task you will save the completed report, publish it to a Fabric workspace, verify the published artifacts, and export the report as a PDF for sharing with stakeholders.
+In this task, you will save the completed report, publish it to a Fabric workspace, verify the published artifacts, and export the report as a PDF for sharing with stakeholders.
 
 1. Save the completed report as **Board-Ready-Dashboard.pbix**.
 
@@ -82,7 +82,7 @@ In this task you will save the completed report, publish it to a Fabric workspac
 
 ## Task 5: Self-Check Against the Evaluation Rubric
 
-In this task you will review the semantic model, report visuals, interactions, security, AI-generated content, and overall formatting to ensure the dashboard is accurate, secure, and ready for business use.
+In this task, you will review the semantic model, report visuals, interactions, security, AI-generated content, and overall formatting to ensure the dashboard is accurate, secure, and ready for business use.
 
 1. Verify the semantic model, relationships, hidden columns, and date table configuration.
 
@@ -104,4 +104,4 @@ In this lab, you:
 - Published the completed report to a Fabric workspace and exported it as a PDF.
 - Performed a final quality review to validate the data model, visuals, interactions, security, and overall report readiness.
 
-### You have Successfully completed this lab
+### You have successfully completed this lab

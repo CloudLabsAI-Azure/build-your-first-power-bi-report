@@ -133,15 +133,15 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
     ![](./media/gs6.png)
 
-1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username, and click on **Next (2)**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username, and click on **Next**. 
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
       ![](./media/gs7.png) 
      
-1. Now enter the following Temporary Access Pass and click on **Sign in (2)**.
+1. Now enter the following Temporary Access Pass and click on **Sign in**.
    
-   * **Temporaray Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   * **Temporaray Access Pass**: <inject key="AzureAdUserPassword"></inject>
 
       ![](./media/gs8.png)
      

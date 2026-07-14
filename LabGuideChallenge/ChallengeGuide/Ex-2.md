@@ -12,7 +12,7 @@ In this challenge, you will enhance the Power BI dashboard by implementing Row-L
 
 ## 🎯 Objectives
 
-In this challenge, you will:
+In this challenge, you will complete the following tasks:
 
 - Task 1: Apply Row-Level Security by region
 - Task 2: Add a Copilot narrative

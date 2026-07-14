@@ -4,7 +4,7 @@
 
 ## 📘 Lab Scenario
 
-You are a Business Intelligence Analyst tasked with building the first version of a Sales Performance dashboard for leadership. You have been handed a raw sales dataset customer, product, region, sales rep, and budget files with no existing data model. Your job is to shape this raw data into a reliable model, surface the key revenue and margin metrics leadership cares about, and present it all in a clean, interactive, board-ready report.
+You are a Business Intelligence Analyst tasked with building the first version of a Sales Performance dashboard for leadership. You have been handed a raw sales dataset: customer, product, region, sales rep, and budget files with no existing data model. Your job is to shape this raw data into a reliable model, surface the key revenue and margin metrics leadership cares about, and present it all in a clean, interactive, board-ready report.
 
 ## 📋 Overview
 
@@ -12,7 +12,7 @@ In this exercise, you will build a complete Power BI Sales Performance dashboard
 
 ## 🎯 Objectives
 
-In this exercise you will:
+In this exercise, you will:
 
 - Task 1: Review the brief and explore the dataset
 - Task 2: Model the data
@@ -22,7 +22,7 @@ In this exercise you will:
 
 ## Task 1: Review the brief and explore the dataset
 
-In this task you will verify that the required CSV dataset files are available and populated with sample data before importing them into Power BI.
+In this task, you will verify that the required CSV dataset files are available and populated with sample data before importing them into Power BI.
 
 1. Open **File Explorer** and navigate to **C:\LabFiles\data**.
 
@@ -39,7 +39,7 @@ In this task you will verify that the required CSV dataset files are available a
 
 ## Task 2: Model the Data
 
-In this task you will import the dataset into Power BI, create the required relationships, configure the date table and hierarchy, hide technical columns, and validate the data model.
+In this task, you will import the dataset into Power BI, create the required relationships, configure the date table and hierarchy, hide technical columns, and validate the data model.
 
 1. Open **Power BI Desktop** and create a **Blank report**.
 
@@ -60,7 +60,7 @@ In this task you will import the dataset into Power BI, create the required rela
 
 ## Task 3: Create KPIs
 
-In this task you will create DAX measures for key business metrics, format them appropriately, and display them as KPI cards with meaningful titles.
+In this task, you will create DAX measures for key business metrics, format them appropriately, and display them as KPI cards with meaningful titles.
 
 1. Create a new table named **_Measures** to store all DAX measures.
 
@@ -80,7 +80,7 @@ In this task you will create DAX measures for key business metrics, format them 
 
 ## Task 4: Create Charts and a Slicer
 
-In this task you will create charts and slicers, configure sorting and filtering, and format the visuals to build an interactive sales performance report.
+In this task, you will create charts and slicers, configure sorting and filtering, and format the visuals to build an interactive sales performance report.
 
 1. Create a **Line chart** using **MonthName** from **Dim_Date** and **Total Revenue** from the **_Measures** table.
 
@@ -100,7 +100,7 @@ In this task you will create charts and slicers, configure sorting and filtering
 
 ## Task 5: Apply a Theme
 
-In this task you will apply and customize a report theme, add a dashboard title, and arrange the visuals into a polished, board-ready dashboard.
+In this task, you will apply and customize a report theme, add a dashboard title, and arrange the visuals into a polished, board-ready dashboard.
 
 1. Apply a **Dark** theme to the report from the **View** tab.
 

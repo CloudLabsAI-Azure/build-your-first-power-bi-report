@@ -96,7 +96,7 @@ Welcome to your **Board-Ready Dashboard Challenge**! We've prepared a seamless e
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![](./media/gg1.png)
+![](./media/gggg.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -134,27 +134,30 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the **Azure Portal** icon.
+1. On your virtual machine, click on the **Microsoft Edge** icon.
 
-    ![](./media/gs6.png)
+1. Navigate to Fabric portal by using the below link.
 
-1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username, and click on **Next**. 
+    ```
+    https://app.fabric.microsoft.com
+    ```
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
-   
-      ![](./media/gs7.png) 
-     
-1. Now enter the following Temporary Access Pass and click on **Sign in**.
-   
-   * **Temporaray Access Pass**: <inject key="AzureAdUserPassword"></inject>
+1. In the **Enter your email address (1)** dialog box, enter the lab-provided email address (1), and then select **Submit (2)**.
 
-      ![](./media/gs8.png)
+    **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+
+    ![](../SolutionGuide/images1/fabloguser.png) 
+
+1. In the **Password (1)** dialog box, enter the lab-provided email address (1), and then select **Submit (2)**.
+
+    **Temporaray Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
+
+    ![](../SolutionGuide/images1/fablogpass.png)
+
      
 1. If you see the pop-up **Stay signed in?**, select **No**.
 
    ![](./media/gs9.png)
-
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
 
 ## 📞 Support Contact
 

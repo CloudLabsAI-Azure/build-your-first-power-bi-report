@@ -96,7 +96,7 @@ Welcome to your **Board-Ready Dashboard Challenge**! We've prepared a seamless e
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![](./media/gg1.png)
+![](./media/gggg.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -132,29 +132,32 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
 ![](./media/gg2.png)
 
-## Let's Get Started with Azure Portal
+## Let's Get Started with Power BI Service
  
-1. On your virtual machine, click on the **Azure Portal** icon.
+1. On your virtual machine, click on the **Microsoft Edge** icon.
 
-    ![](./media/gs6.png)
+1. Navigate to Fabric portal by using the below link.
 
-1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username, and click on **Next**. 
+    ```
+    https://app.powerbi.com/
+    ```
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
-   
-      ![](./media/gs7.png) 
+1. On the **Sign in** page, enter the following email and click **Submit (2)**.
+
+   - **Email: (1)** <inject key="AzureAdUserEmail"></inject>
+
+     ![](./media/pbi.png)
+
+1. On the **Temporary Access Pass** screen, enter the following password and click **Sign in (2)**.
+
+   - **Temporary Access Pass: (1)** <inject key="AzureAdUserPassword"></inject>
+
+     ![](./media/gs222.png)
+
      
-1. Now enter the following Temporary Access Pass and click on **Sign in**.
-   
-   * **Temporaray Access Pass**: <inject key="AzureAdUserPassword"></inject>
-
-      ![](./media/gs8.png)
-     
-1. If you see the pop-up **Stay signed in?**, select **No**.
+1. When prompted with **Stay signed in?**, click **Yes**.
 
    ![](./media/gs9.png)
-
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
 
 ## 📞 Support Contact
 

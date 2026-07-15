@@ -102,7 +102,6 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
-
 ## Exploring Your Lab Resources
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
@@ -136,7 +135,7 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
  
 1. On your virtual machine, click on the **Microsoft Edge** icon.
 
-1. Navigate to Fabric portal by using the below link.
+1. Navigate to the Fabric portal by using the link below.
 
     ```
     https://app.powerbi.com/
@@ -153,7 +152,6 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
    - **Temporary Access Pass: (1)** <inject key="AzureAdUserPassword"></inject>
 
      ![](./media/gs222.png)
-
      
 1. When prompted with **Stay signed in?**, click **Yes**.
 
